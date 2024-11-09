@@ -59,5 +59,5 @@ def main():
     elif choice == "7":
         pass
         
-if __name__ == "__main__": #start execution from here
-    main()
+if __name__ == "__main__": #start execution from here only when directly accessed; avoid running this if imported as a module for say testing
+    main() #give control to this function

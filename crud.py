@@ -1,7 +1,10 @@
+#import all classes of objects
 from models import Book
 from models import Member
 from models import Transaction
+# import databse class
 from database import session
+# import date module
 from datetime import date
 
 # we define functions here and not within database classes 
@@ -12,7 +15,7 @@ def add_book(title, author, isbn, count):
     session.commit()
 
 def get_book():
-    return session.query(Book).all()
+    return session.query(Book).all() #all objects of type Book sitting in tablename books
 
 def add_member(name, email):
     member = Member(name=name, email=email)

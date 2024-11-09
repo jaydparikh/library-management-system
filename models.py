@@ -4,7 +4,8 @@ from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
-# These are database classes - we do not add methods here -> hence use crud
+# These are database classes - we do not add methods here -> these are setup in crud separately
+# classes are for Python 
 class Book(Base):
     __tablename__ = "books"
     id = Column(Integer, primary_key=True)
